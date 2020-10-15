@@ -1,0 +1,113 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+html{
+    background-color: rgb(90, 142, 255);
+}
+.container{
+    margin: 55px auto;
+    background-color: whitesmoke;
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.label{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    padding: 0;
+    height: 15px;
+}
+
+label, button{
+    text-transform: uppercase;
+}
+
+::placeholder, option, select{
+    text-transform: capitalize;
+}
+
+.label h6{
+    color: gray;
+    padding: 0;
+}
+
+input[type="text"],input[type="number"], select{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 3px rgb(150, 150, 150, 0.5);
+    border-radius: 100px;
+    border: none;
+}
+
+.harga{
+    display: flex;
+}
+
+.harga input{
+    margin-right: 10px;
+}
+
+.deskripsi{
+    display: flex;
+}
+
+.berat{
+    width: 40%;
+    margin-right: 10px;
+}
+.panjang{
+    width: 60%;
+}
+
+.input-berat, .input-panjang{
+    display: flex;
+}
+
+.input-berat input, .input-panjang input{
+    margin-right: 5px;
+}
+
+.jumlah, .negara,.upload{
+    width: 50%;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    font-size: 64px;
+    color: rgb(90, 142, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.button{
+    margin-top: 10px;
+}
+
+button{
+    width: 250px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 1px 3px rgb(150, 150, 150, 0.5);
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: rgb(179, 179, 179);
+    color: wheat;
+}

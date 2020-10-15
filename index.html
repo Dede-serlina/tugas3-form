@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Form Order</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae quae fugiat modi tenetur itaque
+            dolores aliquam est non natus, molestiae omnis ratione voluptatem nihil fuga, eaque accusantium, quos
+            temporibus.</p>
+
+        <form action="">
+            <div class="label">
+                <label for="url">URL</label>
+                <h6>Required</h6>
+            </div>
+            <input type="text" placeholder="url">
+
+            <div class="label">
+                <label for="nama">Nama Produk</label>
+                <h6>Required</h6>
+            </div>
+            <input type="text" placeholder="nama">
+
+            <div class="label">
+                <label for="kategori">kategori</label>
+                <h6>Required</h6>
+            </div>
+            <select name="kategori" id="kategori">
+                <option value="meja">meja</option>
+                <option value="lemari">lemar</option>
+                <option value="kursi">kursi</option>
+            </select>
+
+            <div class="label">
+                <label for="berat">harga</label>
+                <h6>Required</h6>
+            </div>
+            <div class="harga">
+                <input type="text" placeholder="Harga">
+                <select name="harga" id="harga">
+                    <option value="usa">$ - US</option>
+                    <option value="idn">Rp - idn</option>
+                    <option value="ringit">Ringgit</option>
+                </select>
+            </div>
+
+            <div class="deskripsi">
+                <div class="berat">
+                    <div class="label">
+                        <label for="berat">berat produk/pcs</label>
+                        <h6>Required</h6>
+                    </div>
+                    <div class="input-berat">
+                        <input type="text" placeholder="berat">
+                        <select name="berat" id="berat">
+                            <option value="g">g</option>
+                            <option value="kg">kg</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="panjang">
+                    <div class="label">
+                        <label for="panjang">panjang (P x L x T)</label>
+                        <h6>Required</h6>
+                    </div>
+                    <div class="input-panjang">
+                        <input type="text" placeholder="panjang">
+                        <input type="text" placeholder="lebar">
+                        <input type="text" placeholder="tinggi">
+                        <select name="panjang" id="panjang">
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="mm">mm</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumlah">
+                <div class="label">
+                    <label for="jumlah">jumlah</label>
+                    <h6>Required</h6>
+                </div>
+                <input type="number" min="0" max="100">
+            </div>
+
+            <div class="negara">
+                <div class="label">
+                    <label for="negara">negara</label>
+                    <h6>Required</h6>
+                </div>
+                <select name="negara" id="negara">
+                    <option value="ind">indonesia</option>
+                    <option value="ml">malaysia</option>
+                    <option value="usa">amerika</option>
+                </select>
+            </div>
+
+            <div class="upload">
+                <div class="label">
+                    <label for="upload">upload image (max 2 mb)</label>
+                    <h6>Required</h6>
+                </div>
+                <label class="custom-file-upload">
+                    <input type="file" />
+                    +
+                </label>
+            </div>
+
+            <div class="button">
+                <button><b>tambah ke keranjang</b></button>
+                <button style="background-color:  rgb(90, 142, 255);"><b>beliin</b></button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
